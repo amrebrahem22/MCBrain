@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MCBrain</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -25,7 +30,7 @@
           <a href="#">New Account</a>
 
           <div class="button-box">
-            <button>Sign In</button>
+            <button id="signinButton">Sign In</button>
           </div>
         </div>
       </header>
@@ -71,7 +76,43 @@
             <img src="./images/element2.png" alt="element 2" />
           </div>
         </div>
+        <h4>Helpin people create beautiful content at MCBRAIN</h4>
+
+        <div class="companies-list">
+          <div class="company">
+            <img src="./images//company1.png" alt="company1" />
+            <p>Memric</p>
+          </div>
+          <div class="company">
+            <img src="./images//company2.png" alt="company1" />
+            <p>Ipsum</p>
+          </div>
+          <div class="company">
+            <img src="./images//company3.png" alt="company1" />
+            <p>MCBRAIN</p>
+          </div>
+          <div class="company">
+            <img src="./images//company4.png" alt="company1" />
+            <p>Quanex</p>
+          </div>
+          <div class="company">
+            <img src="./images//company5.png" alt="company1" />
+            <p>Synthet</p>
+          </div>
+        </div>
       </section>
+
+      <div id="signinPage" class="signin-page-box">
+        <div class="signin-page">
+          <h1>Sign In</h1>
+          <input type="text" placeholder="Username" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Password" />
+          <button>Sign In</button>
+          <p>Login</p>
+          <div id="closeIcon"><i class="bx bx-x"></i></div>
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
