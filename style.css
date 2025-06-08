@@ -782,3 +782,130 @@ header a:hover {
   left: 0;
   border-radius: 30px;
 }
+
+/* Pricing section */
+
+.pricing-section {
+  width: 95%;
+  height: 2000px;
+  border: 0.5px solid rgba(107, 88, 116, 0.5);
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pricing-section .pricing-img-box {
+  position: relative;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-section .pricing-img-box img {
+  position: absolute;
+  top: 20%;
+}
+
+.pricing-section .pricing-img-box img:nth-child(2) {
+  height: 500px;
+  margin-top: 5%;
+}
+
+.pricing-section .title {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+}
+
+.pricing-section .price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 30%;
+  height: 900px;
+  border: 0.5px solid rgba(107, 88, 116, 0.5);
+  padding: 30px;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+.pricing-section .pricing-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  column-gap: 20px;
+}
+
+.pricing-section .price-box h1 {
+  font-size: 40px;
+  color: #ffc786;
+  margin-bottom: 20px;
+}
+.pricing-section .price-box h3 {
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.pricing-section .price-box button {
+  border: none;
+  background-color: gray;
+  color: #000;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  clip-path: polygon(
+    0 0,
+    96% 0,
+    100% 35%,
+    100% 80%,
+    100% 100%,
+    0 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+.pricing-section .price-box p {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(127, 109, 135);
+  max-width: 500px;
+  border-top: 0.5px solid rgba(107, 88, 116, 0.5);
+  padding-top: 20px;
+  margin: 0;
+}
+
+.pricing-section .price-box p img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.pricing-section .price-box:nth-child(2) {
+  margin-top: 20px;
+  height: 950px;
+}
+
+.pricing-section .price-box:nth-child(2) h1 {
+  color: #7e00d2;
+}
+.pricing-section .price-box:nth-child(3) h1 {
+  color: #ff776f;
+}
+
+.pricing-section a {
+  color: #fff;
+  font-size: 25px;
+  margin-top: 70px;
+}
+
