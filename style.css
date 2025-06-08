@@ -909,3 +909,90 @@ header a:hover {
   margin-top: 70px;
 }
 
+/* Roadmap section */
+
+.roadmap-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  border: 0.5px solid rgba(107, 88, 116, 0.5);
+  border-top: 0;
+}
+
+.roadmap-section h1 {
+  font-size: 70px;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.roadmap-section .roadmap-card {
+  border: 0.5px solid rgba(107, 88, 116, 0.5);
+  position: relative;
+  height: 1200px;
+  width: 45%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.roadmap-section .roadmap-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.roadmap-section .roadmap-card h2 {
+  position: absolute;
+  bottom: 20%;
+  left: 8%;
+  font-size: 50px;
+}
+.roadmap-section .roadmap-card p {
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+  max-width: 80%;
+  font-size: 25px;
+  color: rgb(127, 109, 135);
+}
+
+.roadmap-section .roadmap-cards-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 2000px;
+}
+
+.roadmap-section .roadmap-card:nth-child(2) {
+  margin-top: 10%;
+}
+.roadmap-section .roadmap-card:nth-child(3) {
+  margin-top: -10%;
+}
+
+.roadmap-section .button-box {
+  width: 200px;
+  height: 70px;
+  margin-top: 100px;
+}
+
+.roadmap-section .button-box button {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.roadmap-section .roadmap-gradient {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0 0 300px 300px rgba(181, 47, 226, 0.1);
+  mix-blend-mode: lighten;
+}
