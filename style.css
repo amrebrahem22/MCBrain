@@ -981,6 +981,7 @@ header a:hover {
   width: 200px;
   height: 70px;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .roadmap-section .button-box button {
@@ -995,4 +996,117 @@ header a:hover {
   z-index: -1;
   box-shadow: 0 0 300px 300px rgba(181, 47, 226, 0.1);
   mix-blend-mode: lighten;
+}
+
+/* Footer section */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  border: 0.5px solid rgba(107, 88, 116, 0.5);
+  height: 200px;
+}
+
+footer h1 {
+  margin-left: 5%;
+  color: gray;
+}
+
+footer .box-icons {
+  margin-right: 5%;
+  display: flex;
+  gap: 20px;
+}
+
+footer .box-icons a {
+  color: gray;
+  border: 0.5px solid rgba(107, 88, 116, 0.5);
+  border-radius: 50%;
+  font-size: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: 0.5s;
+}
+footer .box-icons a:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.217);
+}
+
+/* Animations */
+
+/* Auto display animations */
+.autoDisplay {
+  animation: autoDisplayAnimation;
+  animation-timeline: view(70% 0);
+}
+
+@keyframes autoDisplayAnimation {
+  from {
+    filter: blur(10px);
+    transform: translateY(-200px) scale(0.5);
+  }
+  to {
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Fade-in left animations */
+.fadeInLeft {
+  animation: fadeInLeftAnimation;
+  animation-timeline: view();
+}
+
+@keyframes fadeInLeftAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px) scale(0.2);
+  }
+  35%,
+  50% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Fade-in right animations */
+.fadeInRight {
+  animation: fadeInRightAnimation;
+  animation-timeline: view();
+}
+
+@keyframes fadeInRightAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(500px) scale(0.2);
+  }
+  35%,
+  50% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Auto blur animations */
+.autoBlur {
+  animation: autoBlurAnimation;
+  animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation {
+  0% {
+    filter: blur(40px);
+  }
+  30%,
+  70% {
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    filter: blur(40px);
+    opacity: 0;
+  }
 }
